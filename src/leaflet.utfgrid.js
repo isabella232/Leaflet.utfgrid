@@ -95,7 +95,6 @@ L.UtfGrid = L.Class.extend({
 	_click: function (e) {
 		var self = this;
 		this.dataForLatLng(e.latlng, function(data){
-			console.log(e);
 			self.fire('click', data);
 		});
 	},
